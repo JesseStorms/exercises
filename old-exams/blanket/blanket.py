@@ -5,6 +5,7 @@ from statistics import mean
 
 
 def getDate(date):
+    # sorts on month for some reason?
     return datetime.datetime.strptime(date[0], '%d/%M/%Y')
 
 data = sys.stdin.readline()
