@@ -6,7 +6,7 @@ from statistics import mean
 
 def getDate(date):
     # sorts on month for some reason?
-    return datetime.datetime.strptime(date[0], '%d/%M/%Y')
+    return datetime.datetime.strptime(date[0], '%d/%m/%Y')
 
 data = sys.stdin.readline()
 jData = json.loads(data)
