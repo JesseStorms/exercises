@@ -7,6 +7,7 @@ def getDate(date):
     try:
         return datetime.datetime.strftime(datetime.datetime.strptime(date, '%d-%m-%Y'),"%#d-%#m-%Y")
         # return datetime.datetime.strftime(datetime.datetime.strptime(date, '%d-%m-%Y'),"%-d-%-m-%Y")
+        # for some reason, %#d removes leading zero's on Windows, %-d removes leading zero's on Unix?
     except:
         return False
 
